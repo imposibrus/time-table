@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TimeTable
+import TimeTable
 
 class TimeTableTests: XCTestCase {
     

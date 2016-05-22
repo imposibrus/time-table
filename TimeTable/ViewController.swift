@@ -22,9 +22,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        pickerView1.selectRow(4, inComponent: 0, animated: false)
-        pickerView2.selectRow(4, inComponent: 0, animated: false)
-        labelResult.text = "16"
+        let val1 = 4;
+        let val2 = 4;
+        pickerView1.selectRow(val1, inComponent: 0, animated: false)
+        pickerView2.selectRow(val2, inComponent: 0, animated: false)
+        labelResult.text = String(val1 * val2)
         timeTable = TimeTable()
     }
 
